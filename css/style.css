@@ -377,3 +377,8 @@ object-fit: contain;
     z-index: 9999; 
     pointer-events: all; /* Eso tilin */
 }
+@media (max-width: 430px) {
+    #menu-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
