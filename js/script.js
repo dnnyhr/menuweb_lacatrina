@@ -426,13 +426,4 @@ if (e.target === promoModal) {
 }
 });
 
-function handleScroll() {
-    if (window.scrollY > lastScrollY) {
-        promoButton.classList.add('hidden');
-    } else {
-        promoButton.classList.remove('hidden');
-    }
-    lastScrollY = window.scrollY; 
-}
-window.addEventListener('scroll', handleScroll);
-    renderMenu(); //Creado por Danilo Herrera con amor para mi hermanita Daniela Herrera.
+renderMenu(); //Creado por Danilo Herrera con amor para mi hermanita Daniela Herrera.
