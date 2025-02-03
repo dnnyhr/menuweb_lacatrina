@@ -1,1 +1,438 @@
-const _0xba0dc3=_0x5251;(function(_0x2b0e96,_0x2b2b02){const _0x48cc8d=_0x5251,_0x2913cf=_0x2b0e96();while(!![]){try{const _0x12c250=-parseInt(_0x48cc8d(0x122))/0x1*(-parseInt(_0x48cc8d(0xe4))/0x2)+parseInt(_0x48cc8d(0xf4))/0x3*(parseInt(_0x48cc8d(0x121))/0x4)+parseInt(_0x48cc8d(0x124))/0x5+parseInt(_0x48cc8d(0x136))/0x6*(-parseInt(_0x48cc8d(0x109))/0x7)+-parseInt(_0x48cc8d(0xfd))/0x8+-parseInt(_0x48cc8d(0x175))/0x9+-parseInt(_0x48cc8d(0xf1))/0xa*(-parseInt(_0x48cc8d(0x163))/0xb);if(_0x12c250===_0x2b2b02)break;else _0x2913cf['push'](_0x2913cf['shift']());}catch(_0x261e43){_0x2913cf['push'](_0x2913cf['shift']());}}}(_0x2d63,0x7ed6b));const MENU_CATEGORIES={'Tacos':[{'id':0x1,'nombre':_0xba0dc3(0x178),'descripcion':'Tacos\x20estilo\x20Mexicano\x20de\x20cerdo\x20con\x20piña.','precio':0x37,'imagenes':[_0xba0dc3(0x173)],'ingredientes':['Tortilla\x20de\x20maíz',_0xba0dc3(0x106),'Piña','Salsa\x20verde\x20y\x20Salsa\x20Roja']},{'id':0xa,'nombre':_0xba0dc3(0x113),'descripcion':'Tacos\x20estilo\x20Mexicano\x20de\x20res\x20con\x20queso\x20mozarella.','precio':'55','imagenes':[_0xba0dc3(0x110),'./assets/Alambres\x202.webp'],'ingredientes':[_0xba0dc3(0xfa),'Res',_0xba0dc3(0x13f),'Salsa\x20verde\x20y\x20Salsa\x20Roja']},{'id':0xb,'nombre':_0xba0dc3(0x15c),'descripcion':_0xba0dc3(0x15f),'precio':_0xba0dc3(0x184),'imagenes':[_0xba0dc3(0x12e)],'ingredientes':[_0xba0dc3(0xfa),_0xba0dc3(0x123),'Queso\x20Mozarella',_0xba0dc3(0x120),'Salsa\x20verde\x20y\x20Salsa\x20Roja']}],'Antojitos':[{'id':0x8,'nombre':_0xba0dc3(0x14a),'descripcion':_0xba0dc3(0x13b),'precio':_0xba0dc3(0x153),'imagenes':[_0xba0dc3(0x134)],'ingredientes':[_0xba0dc3(0xfa),'Carne:\x20Pollo,\x20Res,\x20Cerdo\x20o\x20Mixto',_0xba0dc3(0x16f),_0xba0dc3(0xf7),_0xba0dc3(0x102),_0xba0dc3(0x129)]},{'id':0x9,'nombre':_0xba0dc3(0x177),'descripcion':'Se\x20te\x20antojan?','precio':'160\x20a\x20190','imagenes':[_0xba0dc3(0x15e),_0xba0dc3(0x14b)],'ingredientes':[_0xba0dc3(0x12b),_0xba0dc3(0xf6),_0xba0dc3(0x16f),'Queso\x20amarillo',_0xba0dc3(0x144)]},{'id':0xf,'nombre':'Burritos','descripcion':_0xba0dc3(0x16b),'precio':_0xba0dc3(0x10f),'imagenes':['./assets/Burritos.webp'],'ingredientes':[_0xba0dc3(0x141),_0xba0dc3(0x14e),'Frijoles\x20molidos','Queso\x20Mozarella','Lechuga']},{'id':0x10,'nombre':_0xba0dc3(0x171),'descripcion':'.','precio':_0xba0dc3(0x142),'imagenes':[_0xba0dc3(0x149)],'ingredientes':[_0xba0dc3(0x165),_0xba0dc3(0x141),_0xba0dc3(0x147)]},{'id':0x11,'nombre':_0xba0dc3(0xeb),'descripcion':'.','precio':'50','imagenes':[_0xba0dc3(0x149)],'ingredientes':['Carne:\x20pollo,\x20res,\x20cerdo\x20o\x20mixto',_0xba0dc3(0x14f),'lechuga','pico\x20de\x20gallo','frijoles\x20molidos']}],'Sopas':[{'id':0xe,'nombre':'Maruloca','descripcion':_0xba0dc3(0x182),'precio':_0xba0dc3(0x184),'imagenes':[_0xba0dc3(0x10d)],'ingredientes':[_0xba0dc3(0x128),_0xba0dc3(0x177),_0xba0dc3(0x114),_0xba0dc3(0xf0),_0xba0dc3(0x117)]},{'id':0x12,'nombre':'Ramen-Birria','descripcion':'.','precio':_0xba0dc3(0x118),'imagenes':[_0xba0dc3(0x149)],'ingredientes':[_0xba0dc3(0x161),_0xba0dc3(0x147),_0xba0dc3(0x120),_0xba0dc3(0x183)]}],'Papas':[{'id':0xc,'nombre':_0xba0dc3(0x137),'descripcion':_0xba0dc3(0x168),'precio':'180','imagenes':['./assets/Papas-locas.webp'],'ingredientes':[_0xba0dc3(0x12a),_0xba0dc3(0x179),_0xba0dc3(0x104)]},{'id':0xd,'nombre':_0xba0dc3(0x10c),'descripcion':_0xba0dc3(0x16d),'precio':_0xba0dc3(0x184),'imagenes':[_0xba0dc3(0xe5)],'ingredientes':[_0xba0dc3(0x12a),_0xba0dc3(0x146),_0xba0dc3(0x144),'mayonesa']}]};let currentImageIndex=0x0,autoSlideInterval;function updateGallery(_0x55faef){const _0x300af6=_0xba0dc3,_0x4f5d12=document[_0x300af6(0xe7)](_0x300af6(0x119)),_0x3b1548=document[_0x300af6(0xe7)](_0x300af6(0x167));_0x4f5d12[_0x300af6(0x174)]((_0x5c035d,_0x4a1fad)=>{const _0x44643c=_0x300af6;_0x5c035d[_0x44643c(0x101)][_0x44643c(0x112)](_0x44643c(0xfc),'prev');if(_0x4a1fad===currentImageIndex)_0x5c035d[_0x44643c(0x101)]['add'](_0x44643c(0xfc));_0x5c035d[_0x44643c(0x11c)]=_0x55faef[_0x4a1fad]||'',_0x5c035d[_0x44643c(0x12d)][_0x44643c(0x16e)]=_0x55faef[_0x4a1fad]?_0x44643c(0x180):_0x44643c(0xee);}),_0x3b1548[_0x300af6(0x174)]((_0x5133c9,_0x185fa9)=>{const _0x54b4f5=_0x300af6;_0x5133c9[_0x54b4f5(0x101)][_0x54b4f5(0x140)](_0x54b4f5(0xfc),_0x185fa9===currentImageIndex);});}function _0x5251(_0x9f7315,_0x4d6f1c){const _0x2d63f5=_0x2d63();return _0x5251=function(_0x5251fe,_0x10a8b3){_0x5251fe=_0x5251fe-0xe2;let _0x5c399f=_0x2d63f5[_0x5251fe];return _0x5c399f;},_0x5251(_0x9f7315,_0x4d6f1c);}function handleGalleryNavigation(_0x4b160e){const _0x5d2e0e=_0xba0dc3;document['getElementById'](_0x5d2e0e(0xea))[_0x5d2e0e(0xef)]=_0x4b160e[_0x5d2e0e(0x107)]((_0x27daa4,_0x4442e1)=>_0x5d2e0e(0x14d)+(_0x4442e1===0x0?'active':'')+_0x5d2e0e(0x157)+_0x4442e1+_0x5d2e0e(0x131))[_0x5d2e0e(0x152)](''),document[_0x5d2e0e(0xe7)](_0x5d2e0e(0x167))[_0x5d2e0e(0x174)](_0x1d8301=>{const _0x1d0630=_0x5d2e0e;_0x1d8301[_0x1d0630(0x151)]('click',()=>{currentImageIndex=parseInt(_0x1d8301['dataset']['index'],0xa),updateGallery(_0x4b160e);});}),clearInterval(autoSlideInterval),autoSlideInterval=setInterval(()=>{const _0xf0712f=_0x5d2e0e;currentImageIndex=(currentImageIndex+0x1)%_0x4b160e[_0xf0712f(0xf9)],updateGallery(_0x4b160e);},0xbb8);}function openDrawer(_0xae2dc5){const _0x4c09eb=_0xba0dc3,_0x16b982=document[_0x4c09eb(0x105)](_0x4c09eb(0x181)),_0x4fa1e1=document[_0x4c09eb(0x105)](_0x4c09eb(0x12c)),_0x399390=document[_0x4c09eb(0x105)]('drawer-description'),_0xa53179=document[_0x4c09eb(0x105)](_0x4c09eb(0x10b)),_0x45dcc8=document['getElementById']('drawer-price'),_0x57c253=document[_0x4c09eb(0xf3)](_0x4c09eb(0x143));_0x4fa1e1['textContent']=_0xae2dc5[_0x4c09eb(0x11b)],_0x399390[_0x4c09eb(0x166)]=_0xae2dc5[_0x4c09eb(0x17c)],_0x45dcc8[_0x4c09eb(0x166)]='C$'+_0xae2dc5['precio']+'.',_0xa53179[_0x4c09eb(0xef)]='',_0xae2dc5['ingredientes'][_0x4c09eb(0x174)](_0x46ec82=>{const _0x379817=_0x4c09eb,_0x59f74d=document[_0x379817(0x169)]('li');_0x59f74d['textContent']=_0x46ec82,_0xa53179[_0x379817(0x116)](_0x59f74d);}),currentImageIndex=0x0,updateGallery(_0xae2dc5[_0x4c09eb(0xe3)]),handleGalleryNavigation(_0xae2dc5[_0x4c09eb(0xe3)]),_0x16b982[_0x4c09eb(0x12d)][_0x4c09eb(0x16e)]=_0x4c09eb(0x132),_0x57c253[_0x4c09eb(0x101)][_0x4c09eb(0x162)](_0x4c09eb(0x17d));}function closeDrawer(){const _0x2947b6=_0xba0dc3,_0x18f428=document[_0x2947b6(0x105)](_0x2947b6(0x181)),_0x9475ac=document[_0x2947b6(0xf3)](_0x2947b6(0x143));_0x18f428[_0x2947b6(0x12d)][_0x2947b6(0x16e)]=_0x2947b6(0xee),_0x9475ac[_0x2947b6(0x101)][_0x2947b6(0x112)]('hidden'),clearInterval(autoSlideInterval);}const observerOptions={'root':null,'rootMargin':_0xba0dc3(0x16a),'threshold':0.1};function createIntersectionObserver(){return new IntersectionObserver(_0x46d0c0=>{const _0x22203e=_0x5251;_0x46d0c0[_0x22203e(0x174)](_0x52486e=>{const _0x317cf4=_0x22203e;_0x52486e['isIntersecting']&&(_0x52486e['target']['classList'][_0x317cf4(0x162)](_0x317cf4(0x11e)),observer[_0x317cf4(0xfb)](_0x52486e[_0x317cf4(0x145)]));});},observerOptions);}let observer=createIntersectionObserver();function renderMenu(){const _0x1b079a=_0xba0dc3,_0x1717d3=document[_0x1b079a(0x105)](_0x1b079a(0x17f));_0x1717d3[_0x1b079a(0xef)]='',_0x1717d3[_0x1b079a(0x14c)]=_0x1b079a(0x176);let _0x2f778f=Object[_0x1b079a(0x13c)](MENU_CATEGORIES);for(const [_0xd3e56c,_0x121e61]of Object[_0x1b079a(0x103)](_0x2f778f)){const _0x375909=MENU_CATEGORIES[_0x121e61],_0x5eaefa=document[_0x1b079a(0x169)](_0x1b079a(0x13a));_0x5eaefa[_0x1b079a(0x14c)]=_0x1b079a(0x16c),_0x5eaefa['id']=_0x1b079a(0x135)+_0x121e61[_0x1b079a(0x111)]()[_0x1b079a(0x17a)](/\s+/g,'-');const _0x2c7924=document['createElement']('h2');_0x2c7924[_0x1b079a(0x14c)]=_0x1b079a(0xed),_0x2c7924[_0x1b079a(0x166)]=_0x121e61,_0x5eaefa['appendChild'](_0x2c7924),observer[_0x1b079a(0xec)](_0x2c7924);const _0x351122=document[_0x1b079a(0x169)](_0x1b079a(0x13a));_0x351122['className']='grid\x20grid-cols-2\x20gap-4',_0x5eaefa[_0x1b079a(0x116)](_0x351122),_0x375909[_0x1b079a(0x174)](_0x23cd73=>{const _0x260845=_0x1b079a,_0x70450b=document[_0x260845(0x169)](_0x260845(0x13a));_0x70450b[_0x260845(0x14c)]=_0x260845(0x15b),_0x70450b['innerHTML']=_0x260845(0x133)+_0x23cd73[_0x260845(0xe3)][0x0]+'\x22\x20alt=\x22'+_0x23cd73['nombre']+'\x22\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20class=\x22w-full\x20h-48\x20object-cover\x20rounded-lg\x20mb-3\x20shadow-sm\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22absolute\x20top-3\x20right-3\x20bg-gradient-to-r\x20from-orange-500\x20to-red-500\x20text-white\x20px-3\x20py-1\x20rounded-full\x20text-sm\x20font-bold\x20shadow-md\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20C$'+_0x23cd73[_0x260845(0xf2)]+'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h2\x20class=\x22text-lg\x20font-bold\x20text-gray-800\x22>'+_0x23cd73['nombre']+_0x260845(0x12f)+_0x23cd73[_0x260845(0x17c)]+'</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20data-id=\x22'+_0x23cd73['id']+_0x260845(0x108),_0x70450b['addEventListener'](_0x260845(0xf8),_0x9fa9f2=>{const _0xb6206f=_0x260845;!_0x9fa9f2[_0xb6206f(0x145)][_0xb6206f(0x101)]['contains'](_0xb6206f(0x10a))&&openDrawer(_0x23cd73);}),_0x70450b[_0x260845(0xf3)]('.details-btn')['addEventListener'](_0x260845(0xf8),_0x4f9a3e=>{const _0x2dfe59=_0x260845;_0x4f9a3e[_0x2dfe59(0x17e)](),openDrawer(_0x23cd73);}),_0x351122['appendChild'](_0x70450b),observer[_0x260845(0xec)](_0x70450b);}),_0x1717d3[_0x1b079a(0x116)](_0x5eaefa);}const _0x58b314=document['createElement'](_0x1b079a(0x164));_0x58b314[_0x1b079a(0x14c)]=_0x1b079a(0xe8),_0x58b314['innerHTML']=_0x1b079a(0x154),document['body']['appendChild'](_0x58b314);let _0x1bbb32=0x0;const _0x527bda=document[_0x1b079a(0xe7)](_0x1b079a(0xfe));function _0x5033a4(){const _0x3c16a3=_0x1b079a,_0x1decae=window[_0x3c16a3(0x11f)],_0x3bdee9=window[_0x3c16a3(0xe9)],_0x2d1942=document[_0x3c16a3(0x13e)][_0x3c16a3(0x11d)];_0x1decae+_0x3bdee9>=_0x2d1942-0x64?_0x58b314[_0x3c16a3(0x101)][_0x3c16a3(0x162)]('up'):_0x58b314['classList'][_0x3c16a3(0x112)]('up');}function _0x565b41(){const _0x139c7a=_0x1b079a,_0x2318ab=window['scrollY'];if(_0x58b314[_0x139c7a(0x101)][_0x139c7a(0x17b)]('up'))window['scrollTo']({'top':0x0,'behavior':_0x139c7a(0x127)});else{let _0x330bd6=null;for(const _0x35e4ff of _0x527bda){const _0x51973f=_0x35e4ff['offsetTop'];if(_0x51973f>_0x2318ab+0x64){_0x330bd6=_0x35e4ff;break;}}_0x330bd6?_0x330bd6[_0x139c7a(0x10e)]({'behavior':_0x139c7a(0x127)}):window[_0x139c7a(0x160)]({'top':document[_0x139c7a(0x13e)]['scrollHeight'],'behavior':_0x139c7a(0x127)});}}_0x58b314[_0x1b079a(0x151)](_0x1b079a(0xf8),_0x565b41),window[_0x1b079a(0x151)](_0x1b079a(0x172),_0x5033a4);const _0x50aaca=document[_0x1b079a(0x169)](_0x1b079a(0x13a));_0x50aaca[_0x1b079a(0x14c)]='branding-square\x20bg-gradient-to-r\x20from-white\x20to-gray-200\x20text-gray-800\x20text-center\x20rounded-lg\x20shadow-md\x20p-2\x20mt-4',_0x50aaca['innerHTML']='\x0a\x20\x20\x20\x20\x20<a\x20href=\x22https://wa.me/50587248446\x22\x20target=\x22_blank\x22\x20class=\x22block\x20w-full\x20h-full\x20no-underline\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22text-base\x20font-bold\x22>Creado\x20por\x20<strong>XinoCore</strong></p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22text-xs\x22>presiona\x20para\x20contactar</p>\x0a\x20\x20\x20\x20</a>\x0a',_0x1717d3[_0x1b079a(0x116)](_0x50aaca);}document['addEventListener'](_0xba0dc3(0x100),()=>{const _0x194a53=_0xba0dc3,_0x43b003=document[_0x194a53(0xe7)](_0x194a53(0xf5));let _0x22aea5=0x0;_0x43b003['forEach'](_0x247498=>{const _0x596755=_0x194a53;_0x247498[_0x596755(0x125)]?_0x22aea5++:(_0x247498['addEventListener'](_0x596755(0x158),()=>{_0x22aea5++,_0x11eaa6();}),_0x247498[_0x596755(0x151)]('error',()=>{_0x22aea5++,_0x11eaa6();}));});function _0x11eaa6(){const _0x3c0f5d=_0x194a53;_0x22aea5===_0x43b003[_0x3c0f5d(0xf9)]&&document[_0x3c0f5d(0x170)][_0x3c0f5d(0x101)][_0x3c0f5d(0x162)](_0x3c0f5d(0x156));}_0x11eaa6();}),document['getElementById'](_0xba0dc3(0x155))['addEventListener'](_0xba0dc3(0xf8),closeDrawer);function filterMenuItems(_0x407cdf){const _0x20252b=_0xba0dc3,_0x51ef96=document[_0x20252b(0x105)](_0x20252b(0x17f));_0x51ef96[_0x20252b(0xef)]='',observer=createIntersectionObserver();let _0x49a5dd=![];for(const [_0x24a4bf,_0x5484d3]of Object[_0x20252b(0x103)](MENU_CATEGORIES)){const _0x59cc6=_0x5484d3[_0x20252b(0x159)](_0x3fd463=>_0x3fd463[_0x20252b(0x11b)][_0x20252b(0x111)]()[_0x20252b(0x150)](_0x407cdf[_0x20252b(0x111)]())||_0x3fd463[_0x20252b(0x17c)]['toLowerCase']()[_0x20252b(0x150)](_0x407cdf[_0x20252b(0x111)]()));if(_0x59cc6[_0x20252b(0xf9)]>0x0){_0x49a5dd=!![];const _0x538530=document['createElement']('div');_0x538530[_0x20252b(0x14c)]=_0x20252b(0x16c);const _0x3de369=document['createElement']('h2');_0x3de369[_0x20252b(0x14c)]='category-header\x20text-3xl\x20font-bold\x20text-white\x20bg-gradient-to-r\x20from-pink-500\x20to-orange-500\x20p-4\x20rounded-lg\x20shadow-lg\x20text-center\x20mb-6',_0x3de369[_0x20252b(0x166)]=_0x24a4bf,_0x538530[_0x20252b(0x116)](_0x3de369),observer[_0x20252b(0xec)](_0x3de369);const _0x1726dd=document[_0x20252b(0x169)](_0x20252b(0x13a));_0x1726dd[_0x20252b(0x14c)]=_0x20252b(0x138),_0x538530['appendChild'](_0x1726dd),_0x59cc6[_0x20252b(0x174)](_0x39fa18=>{const _0x5c6f51=_0x20252b,_0x125f3b=document['createElement'](_0x5c6f51(0x13a));_0x125f3b[_0x5c6f51(0x14c)]=_0x5c6f51(0x15b),_0x125f3b[_0x5c6f51(0xef)]=_0x5c6f51(0x13d)+_0x39fa18[_0x5c6f51(0xe3)][0x0]+_0x5c6f51(0x139)+_0x39fa18[_0x5c6f51(0x11b)]+_0x5c6f51(0x126)+_0x39fa18['precio']+_0x5c6f51(0xe2)+_0x39fa18['nombre']+'</h2>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22text-sm\x20text-gray-600\x22>'+_0x39fa18[_0x5c6f51(0x17c)]+_0x5c6f51(0xff)+_0x39fa18['id']+_0x5c6f51(0x148),_0x125f3b[_0x5c6f51(0x151)](_0x5c6f51(0xf8),()=>openDrawer(_0x39fa18)),_0x1726dd['appendChild'](_0x125f3b),observer[_0x5c6f51(0xec)](_0x125f3b);}),_0x51ef96[_0x20252b(0x116)](_0x538530);}}!_0x49a5dd&&(_0x51ef96[_0x20252b(0xef)]='\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22text-center\x20text-gray-600\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22text-lg\x20font-bold\x22>No\x20se\x20encontraron\x20resultados.</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20');}function _0x2d63(){const _0x2cc552=['Tacos\x20de\x20Alambre','Queso\x20Amarillo','input','appendChild','Takis','200','.gallery-image','search-bar','nombre','src','scrollHeight','animate','scrollY','Caldo\x20de\x20birria','2571164ZPRFJJ','1dQHAjY','Res','3729585TUIFwW','complete','\x22\x20class=\x22w-full\x20h-48\x20object-cover\x20rounded-lg\x20mb-3\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22absolute\x20top-3\x20right-3\x20bg-orange-500\x20text-white\x20px-2\x20py-1\x20rounded-full\x20text-sm\x20font-bold\x22>C$','smooth','Maruchan','Salsa\x20de\x20chilaquiles','Papas','Tortilla\x20de\x20Nacho','drawer-title','style','./assets/Birria.webp','</h2>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22text-sm\x20text-gray-600\x20mb-3\x22>','apply','\x22></div>','flex','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22relative\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22','./assets/chilaquiles.webp','category-','54KUyGJh','Papas\x20Locas','grid\x20grid-cols-2\x20gap-4','\x22\x20alt=\x22','div','Exquisitos\x20chilaquiles\x20con\x20tortilla\x20de\x20maiz\x20tostada.','keys','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22relative\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22','documentElement','Queso\x20Mozarella','toggle','Tortilla\x20de\x20harina','140\x20a\x20170','.scroll-button','salsa','target','Chorizo\x20parrillero','Queso\x20mozarella','\x22\x20class=\x22details-btn\x20mt-3\x20bg-gradient-to-r\x20from-pink-500\x20to-orange-500\x20text-white\x20py-2\x20px-4\x20rounded-lg\x20w-full\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20Ver\x20más\x20detalles\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','./assets/null.webp','Chilaquiles','./assets/Nachos2.webp','className','<div\x20class=\x22gallery-indicator\x20','Carne:\x20pollo,\x20Res,\x20Cerdo\x20o\x20Mixto','Tortilla\x20tostada','includes','addEventListener','join','150\x20a\x20180','\x0a\x20\x20\x20\x20<svg\x20viewBox=\x220\x200\x2024\x2024\x22\x20xmlns=\x22http://www.w3.org/2000/svg\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<path\x20d=\x22M7\x2013l5\x205\x205-5M7\x206l5\x205\x205-5\x22/>\x0a\x20\x20\x20\x20</svg>\x0a','drawer-close','loaded','\x22\x20data-index=\x22','load','filter','value','menu-card\x20bg-white\x20rounded-lg\x20shadow-md\x20p-4\x20cursor-pointer','Tacos\x20de\x20Birria','promo-button','./assets/Nachos1.webp','Dos\x20tacos\x20estilo\x20Mexicano\x20de\x20res\x20con\x20queso\x20mozarella\x20y\x20su\x20exquisito\x20caldo\x20de\x20birria.','scrollTo','Carne\x20de\x20Res','add','187ndyfCN','button','Carne:\x20pollo,\x20res,\x20cerdo\x20o\x20mixto','textContent','.gallery-indicator','Riquisimas\x20papas\x20fritas\x20con\x20MUCHO\x20queso.','createElement','0px','Burritos\x20llenos\x20de\x20sabor\x20100%\x20Mexicano\x20','category-section','Riquisimas\x20papas\x20fritas\x20con\x20chorizo\x20parrillero.','display','Salsa\x20roja\x20y\x20verde','body','Quesadillas','scroll','./assets/pastor.webp','forEach','5435766sTgrxV','grid\x20grid-cols-1\x20gap-8','Nachos','Tacos\x20al\x20Pastor','Queso\x20Chedar','replace','contains','descripcion','hidden','stopPropagation','menu-grid','block','drawer-overlay','Una\x20combinación\x20con\x20un\x20sabor\x20de\x20locura.','Ramen','150','</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h2\x20class=\x22text-lg\x20font-bold\x22>','imagenes','942692UInHbp','./assets/Choripapas.webp','close-promo','querySelectorAll','scroll-button','innerHeight','gallery-indicators','Chalupas','observe','category-header\x20text-3xl\x20font-bold\x20text-white\x20bg-gradient-to-r\x20from-pink-500\x20to-orange-500\x20p-4\x20rounded-lg\x20shadow-lg\x20text-center\x20mb-6','none','innerHTML','mayonesa','34490HKolOd','precio','querySelector','3YKDzFs','img','Carne:\x20Pollo,\x20Res,\x20Cerdo\x20o\x20Mixto','Queso','click','length','Tortilla\x20de\x20maíz','unobserve','active','100192PSlchu','.category-section','</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20data-id=\x22','DOMContentLoaded','classList','Crema','entries','Bacon','getElementById','Cerdo','map','\x22\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20class=\x22details-btn\x20w-full\x20bg-gradient-to-r\x20from-pink-500\x20to-orange-500\x20text-white\x20py-2\x20px-4\x20rounded-lg\x20hover:opacity-90\x20transition-opacity\x20duration-300\x20shadow-md\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20Ver\x20más\x20detalles\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','608734PDCsiO','details-btn','drawer-ingredients','Choripapas','./assets/Maruloca.webp','scrollIntoView','120\x20a\x20150','./assets/Taquitos-de-alambre.webp','toLowerCase','remove'];_0x2d63=function(){return _0x2cc552;};return _0x2d63();}function debounce(_0x7ba86d,_0x5e8485){let _0x41ce0c;return function(..._0x76b76f){const _0x23c6ee=_0x5251;clearTimeout(_0x41ce0c),_0x41ce0c=setTimeout(()=>_0x7ba86d[_0x23c6ee(0x130)](this,_0x76b76f),_0x5e8485);};}const debouncedFilterMenuItems=debounce(filterMenuItems,0xa);document[_0xba0dc3(0x105)](_0xba0dc3(0x11a))['addEventListener']('input',_0x35d405=>{const _0xf59ff3=_0xba0dc3,_0x40dbf0=_0x35d405[_0xf59ff3(0x145)]['value'];debouncedFilterMenuItems(_0x40dbf0);}),document[_0xba0dc3(0x105)](_0xba0dc3(0x11a))['addEventListener'](_0xba0dc3(0x115),_0x494ece=>{const _0x3c73bc=_0xba0dc3,_0x4f1855=_0x494ece['target'][_0x3c73bc(0x15a)];filterMenuItems(_0x4f1855);});const promoButton=document[_0xba0dc3(0x105)](_0xba0dc3(0x15d)),promoModal=document[_0xba0dc3(0x105)]('promo-modal'),closePromo=document[_0xba0dc3(0x105)](_0xba0dc3(0xe6));promoButton[_0xba0dc3(0x151)](_0xba0dc3(0xf8),()=>{const _0x1ce689=_0xba0dc3;promoModal['classList'][_0x1ce689(0x112)]('hidden'),setTimeout(()=>{const _0x1bcec1=_0x1ce689;promoModal[_0x1bcec1(0x101)][_0x1bcec1(0x162)](_0x1bcec1(0xfc));},0xa);}),closePromo[_0xba0dc3(0x151)](_0xba0dc3(0xf8),()=>{const _0x41c2a6=_0xba0dc3;promoModal[_0x41c2a6(0x101)][_0x41c2a6(0x112)](_0x41c2a6(0xfc)),setTimeout(()=>{const _0x7c9067=_0x41c2a6;promoModal[_0x7c9067(0x101)][_0x7c9067(0x162)]('hidden');},0x12c);}),promoModal[_0xba0dc3(0x151)]('click',_0x458a95=>{const _0x366ffe=_0xba0dc3;_0x458a95[_0x366ffe(0x145)]===promoModal&&(promoModal[_0x366ffe(0x101)][_0x366ffe(0x112)](_0x366ffe(0xfc)),setTimeout(()=>{const _0x33f8db=_0x366ffe;promoModal[_0x33f8db(0x101)]['add'](_0x33f8db(0x17d));},0x12c));});function handleScroll(){const _0x25cd86=_0xba0dc3;window[_0x25cd86(0x11f)]>lastScrollY?promoButton['classList'][_0x25cd86(0x162)]('hidden'):promoButton[_0x25cd86(0x101)][_0x25cd86(0x112)](_0x25cd86(0x17d)),lastScrollY=window[_0x25cd86(0x11f)];}window[_0xba0dc3(0x151)](_0xba0dc3(0x172),handleScroll),renderMenu();
+const MENU_CATEGORIES = {
+    "Tacos": [
+        {
+            id: 1,
+            nombre: "Tacos al Pastor",
+            descripcion: "Tacos estilo Mexicano de cerdo con piña.",
+            precio: 55,
+            imagenes: ["./assets/pastor.webp"],
+            ingredientes: ["Tortilla de maíz", "Cerdo", "Piña", "Salsa verde y Salsa Roja"]
+        },{
+            id: 10,
+            nombre: "Tacos de Alambre",
+            descripcion: "Tacos estilo Mexicano de res con queso mozarella.",
+            precio: "55",
+            imagenes: [
+                "./assets/Taquitos-de-alambre.webp",
+                "./assets/Alambres 2.webp"
+            ],
+            ingredientes: ["Tortilla de maíz", "Res", "Queso Mozarella", "Salsa verde y Salsa Roja"]
+        },
+        
+        {
+            id: 11,
+            nombre: "Tacos de Birria",
+            descripcion: "Dos tacos estilo Mexicano de res con queso mozarella y su exquisito caldo de birria.",
+            precio: "150",
+            imagenes: ["./assets/Birria.webp"],
+            ingredientes: ["Tortilla de maíz", "Res", "Queso Mozarella", "Caldo de birria", "Salsa verde y Salsa Roja"]
+        }
+        
+    ],
+    "Antojitos": [
+        {
+            id: 8,
+            nombre: "Chilaquiles",
+            descripcion: "Exquisitos chilaquiles con tortilla de maiz tostada.",
+            precio: "150 a 180",
+            imagenes: ["./assets/chilaquiles.webp"],
+            ingredientes: ["Tortilla de maíz", "Carne: Pollo, Res, Cerdo o Mixto", "Salsa roja y verde", "Queso", "Crema", "Salsa de chilaquiles"]
+        },
+        {
+            id: 9,
+            nombre: "Nachos",
+            descripcion: "Se te antojan?",
+            precio: "160 a 190",
+            imagenes: [
+                "./assets/Nachos1.webp",
+                "./assets/Nachos2.webp"
+            ],
+            ingredientes: ["Tortilla de Nacho", "Carne: Pollo, Res, Cerdo o Mixto", "Salsa roja y verde", "Queso amarillo", "salsa"]
+        },
+        {
+            id: 15,
+            nombre: "Burritos",
+            descripcion: "Burritos llenos de sabor 100% Mexicano ",
+            precio: "120 a 150",
+            imagenes: ["./assets/Burritos.webp"],
+            ingredientes: ["Tortilla de harina", "Carne: pollo, Res, Cerdo o Mixto", "Frijoles molidos", "Queso Mozarella", "Lechuga"]
+        },
+        {
+            id: 16,
+            nombre: "Quesadillas",
+            descripcion: ".",
+            precio: "140 a 170",
+            imagenes: ["./assets/null.webp"],
+            ingredientes: ["Carne: pollo, res, cerdo o mixto","Tortilla de harina" , "Queso mozarella"]
+        },
+        {
+            id: 17,
+            nombre: "Chalupas",
+            descripcion: ".",
+            precio: "50",
+            imagenes: ["./assets/null.webp"],
+            ingredientes: ["Carne: pollo, res, cerdo o mixto", "Tortilla tostada", "lechuga", "pico de gallo", "frijoles molidos"]
+        },
+    ],
+    "Sopas": [
+        {
+            id: 14,
+            nombre: "Maruloca",
+            descripcion: "Una combinación con un sabor de locura.",
+            precio: "150",
+            imagenes: ["./assets/Maruloca.webp"],
+            ingredientes: ["Maruchan", "Nachos", "Queso Amarillo", "mayonesa", "Takis"]
+        },
+        {
+            id: 18,
+            nombre: "Ramen-Birria",
+            descripcion: ".",
+            precio: "200",
+            imagenes: ["./assets/null.webp"],
+            ingredientes: ["Carne de Res", "Queso mozarella", "Caldo de birria", "Ramen"]
+        },
+    ],
+    "Papas": [
+        {
+            id: 12,
+            nombre: "Papas Locas",
+            descripcion: "Riquisimas papas fritas con MUCHO queso.",
+            precio: "180",
+            imagenes: ["./assets/Papas-locas.webp"],
+            ingredientes: ["Papas", "Queso Chedar", "Bacon"]
+        },
+        {
+            id: 13,
+            nombre: "Choripapas",
+            descripcion: "Riquisimas papas fritas con chorizo parrillero.",
+            precio: "150",
+            imagenes: ["./assets/Choripapas.webp"],
+            ingredientes: ["Papas", "Chorizo parrillero", "salsa", "mayonesa"]
+        }
+    ]
+};
+
+    let currentImageIndex = 0;
+    let autoSlideInterval;
+
+    function updateGallery(images) {
+        const galleryImages = document.querySelectorAll(".gallery-image");
+        const indicators = document.querySelectorAll(".gallery-indicator");
+
+        galleryImages.forEach((img, index) => {
+            img.classList.remove("active", "prev");
+            if (index === currentImageIndex) img.classList.add("active");
+            img.src = images[index] || "";
+            img.style.display = images[index] ? "block" : "none";
+        });
+
+        indicators.forEach((indicator, index) => {
+            indicator.classList.toggle("active", index === currentImageIndex);
+        });
+    }
+
+    function handleGalleryNavigation(images) {
+        document.getElementById("gallery-indicators").innerHTML = images.map((_, index) =>
+            `<div class="gallery-indicator ${index === 0 ? "active" : ""}" data-index="${index}"></div>`
+        ).join("");
+
+        document.querySelectorAll(".gallery-indicator").forEach(indicator => {
+            indicator.addEventListener("click", () => {
+                currentImageIndex = parseInt(indicator.dataset.index, 10);
+                updateGallery(images);
+            });
+        });
+
+        clearInterval(autoSlideInterval);
+        autoSlideInterval = setInterval(() => {
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            updateGallery(images);
+        }, 3000); // tiempo de las imagenes
+    }
+
+    function openDrawer(plato) {
+        const overlay = document.getElementById('drawer-overlay');
+        const title = document.getElementById('drawer-title');
+        const description = document.getElementById('drawer-description');
+        const ingredientsList = document.getElementById('drawer-ingredients');
+        const price = document.getElementById('drawer-price');
+        const scrollButton = document.querySelector('.scroll-button');
+        title.textContent = plato.nombre;
+        description.textContent = plato.descripcion;
+        price.textContent = `C$${plato.precio}.`;
+    
+        ingredientsList.innerHTML = '';
+        plato.ingredientes.forEach(ingrediente => {
+            const li = document.createElement('li');
+            li.textContent = ingrediente;
+            ingredientsList.appendChild(li);
+        });
+    
+        currentImageIndex = 0;
+        updateGallery(plato.imagenes);
+        handleGalleryNavigation(plato.imagenes);
+        overlay.style.display = 'flex';
+        scrollButton.classList.add('hidden');
+    }
+    
+    function closeDrawer() {
+        const overlay = document.getElementById('drawer-overlay');
+        const scrollButton = document.querySelector('.scroll-button');
+        overlay.style.display = 'none';
+        scrollButton.classList.remove('hidden');
+    
+        clearInterval(autoSlideInterval);
+    }
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    };
+    
+    function createIntersectionObserver() {
+        return new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+    }
+    
+    let observer = createIntersectionObserver();
+    
+    function renderMenu() {
+        const menuGrid = document.getElementById('menu-grid');
+        menuGrid.innerHTML = '';
+        menuGrid.className = 'grid grid-cols-1 gap-8';
+        let categories = Object.keys(MENU_CATEGORIES);
+        for (const [index, categoria] of Object.entries(categories)) {
+            const platos = MENU_CATEGORIES[categoria];
+            const categorySection = document.createElement('div');
+            categorySection.className = 'category-section';
+            categorySection.id = `category-${categoria.toLowerCase().replace(/\s+/g, '-')}`;
+            const categoryHeader = document.createElement('h2');
+            categoryHeader.className = 'category-header text-3xl font-bold text-white bg-gradient-to-r from-pink-500 to-orange-500 p-4 rounded-lg shadow-lg text-center mb-6';
+            categoryHeader.textContent = categoria;
+            categorySection.appendChild(categoryHeader);
+            observer.observe(categoryHeader);
+            const categoryGrid = document.createElement('div');
+            categoryGrid.className = 'grid grid-cols-2 gap-4';
+            categorySection.appendChild(categoryGrid);
+            platos.forEach((plato) => {
+                const card = document.createElement('div');
+                card.className = 'menu-card bg-white rounded-lg shadow-md p-4 cursor-pointer';
+                card.innerHTML = `
+                    <div class="relative">
+                        <img src="${plato.imagenes[0]}" alt="${plato.nombre}" 
+                             class="w-full h-48 object-cover rounded-lg mb-3 shadow-sm">
+                        <div class="absolute top-3 right-3 bg-gradient-to-r from-orange-500 to-red-500 text-white px-3 py-1 rounded-full text-sm font-bold shadow-md">
+                            C$${plato.precio}
+                        </div>
+                    </div>
+                    <h2 class="text-lg font-bold text-gray-800">${plato.nombre}</h2>
+                    <p class="text-sm text-gray-600 mb-3">${plato.descripcion}</p>
+                    <button data-id="${plato.id}" 
+                            class="details-btn w-full bg-gradient-to-r from-pink-500 to-orange-500 text-white py-2 px-4 rounded-lg hover:opacity-90 transition-opacity duration-300 shadow-md">
+                        Ver más detalles
+                    </button>
+                `;
+                card.addEventListener('click', (event) => {
+                    if (!event.target.classList.contains('details-btn')) {
+                        openDrawer(plato);
+                    }
+                });
+                card.querySelector('.details-btn').addEventListener('click', (event) => {
+                    event.stopPropagation();
+                    openDrawer(plato);
+                });
+                categoryGrid.appendChild(card);
+                observer.observe(card);
+            });
+            menuGrid.appendChild(categorySection);
+        }
+        const scrollButton = document.createElement('button');
+scrollButton.className = 'scroll-button';
+scrollButton.innerHTML = `
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
+    </svg>
+`;
+document.body.appendChild(scrollButton);
+let currentCategoryIndex = 0;
+const categorySections = document.querySelectorAll('.category-section');
+function updateScrollButton() {
+    const scrollPosition = window.scrollY;
+    const windowHeight = window.innerHeight;
+    const documentHeight = document.documentElement.scrollHeight;
+    if (scrollPosition + windowHeight >= documentHeight - 100) {
+        scrollButton.classList.add('up');
+    } else {
+        scrollButton.classList.remove('up');
+    }
+}
+function handleScroll() {
+    const scrollPosition = window.scrollY;
+    if (scrollButton.classList.contains('up')) {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    } else {
+        let targetSection = null;
+        for (const section of categorySections) {
+            const sectionTop = section.offsetTop;
+            if (sectionTop > scrollPosition + 100) {
+                targetSection = section;
+                break;
+            }
+        }
+        if (targetSection) {
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+        } else {
+            window.scrollTo({
+                top: document.documentElement.scrollHeight,
+                behavior: 'smooth'
+            });
+        }
+    }
+}
+scrollButton.addEventListener('click', handleScroll);
+window.addEventListener('scroll', updateScrollButton);
+const brandingSquare = document.createElement('div');
+brandingSquare.className = 'branding-square bg-gradient-to-r from-white to-gray-200 text-gray-800 text-center rounded-lg shadow-md p-2 mt-4';
+brandingSquare.innerHTML = `
+     <a href="https://wa.me/50587248446" target="_blank" class="block w-full h-full no-underline">
+        <p class="text-base font-bold">Creado por <strong>XinoCore</strong></p>
+        <p class="text-xs">presiona para contactar</p>
+    </a>
+`;
+menuGrid.appendChild(brandingSquare);
+    }
+    document.addEventListener('DOMContentLoaded', () => {
+    const images = document.querySelectorAll('img');
+    let loadedImages = 0;
+    images.forEach((img) => {
+        if (img.complete) {
+            loadedImages++;
+        } else {
+            img.addEventListener('load', () => {
+                loadedImages++;
+                checkAllImagesLoaded();
+            });
+            img.addEventListener('error', () => {
+                loadedImages++;
+                checkAllImagesLoaded();
+            });
+        }
+    });
+    function checkAllImagesLoaded() {
+        if (loadedImages === images.length) {
+            document.body.classList.add('loaded'); // Cambia el fondo al cargar
+        }
+    }
+    checkAllImagesLoaded();
+});
+    document.getElementById('drawer-close').addEventListener('click', closeDrawer);
+    function filterMenuItems(searchTerm) {
+        const menuGrid = document.getElementById('menu-grid');
+        menuGrid.innerHTML = '';
+        observer = createIntersectionObserver();
+        let hasResults = false;
+        for (const [categoria, platos] of Object.entries(MENU_CATEGORIES)) {
+            const filteredPlatos = platos.filter(plato =>
+                plato.nombre.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                plato.descripcion.toLowerCase().includes(searchTerm.toLowerCase())
+            );
+            if (filteredPlatos.length > 0) {
+                hasResults = true;
+                const categorySection = document.createElement('div');
+                categorySection.className = 'category-section';
+                const categoryHeader = document.createElement('h2');
+                categoryHeader.className = 'category-header text-3xl font-bold text-white bg-gradient-to-r from-pink-500 to-orange-500 p-4 rounded-lg shadow-lg text-center mb-6';
+                categoryHeader.textContent = categoria;
+                categorySection.appendChild(categoryHeader);
+                observer.observe(categoryHeader);
+                const categoryGrid = document.createElement('div');
+                categoryGrid.className = 'grid grid-cols-2 gap-4';
+                categorySection.appendChild(categoryGrid);
+                filteredPlatos.forEach(plato => {
+                    const card = document.createElement('div');
+                    card.className = 'menu-card bg-white rounded-lg shadow-md p-4 cursor-pointer';
+                    card.innerHTML = `
+                        <div class="relative">
+                            <img src="${plato.imagenes[0]}" alt="${plato.nombre}" class="w-full h-48 object-cover rounded-lg mb-3">
+                            <div class="absolute top-3 right-3 bg-orange-500 text-white px-2 py-1 rounded-full text-sm font-bold">C$${plato.precio}</div>
+                        </div>
+                        <h2 class="text-lg font-bold">${plato.nombre}</h2>
+                        <p class="text-sm text-gray-600">${plato.descripcion}</p>
+                        <button data-id="${plato.id}" class="details-btn mt-3 bg-gradient-to-r from-pink-500 to-orange-500 text-white py-2 px-4 rounded-lg w-full">
+                            Ver más detalles
+                        </button>
+                    `;
+                    card.addEventListener('click', () => openDrawer(plato));
+                    categoryGrid.appendChild(card);
+                    observer.observe(card);
+                });
+                menuGrid.appendChild(categorySection);
+            }
+        }
+        if (!hasResults) {
+            menuGrid.innerHTML = `
+                <div class="text-center text-gray-600">
+                    <p class="text-lg font-bold">No se encontraron resultados.</p>
+                </div>
+            `;
+        }
+    }
+    function debounce(func, wait) {
+        let timeout;
+        return function (...args) {
+            clearTimeout(timeout);
+            timeout = setTimeout(() => func.apply(this, args), wait);
+        };
+    }
+    const debouncedFilterMenuItems = debounce(filterMenuItems, 10);
+    document.getElementById('search-bar').addEventListener('input', (e) => {
+        const searchTerm = e.target.value;
+        debouncedFilterMenuItems(searchTerm);
+    });
+    document.getElementById('search-bar').addEventListener('input', (e) => {
+        const searchTerm = e.target.value;
+        filterMenuItems(searchTerm);
+    });
+    const promoButton = document.getElementById('promo-button');
+const promoModal = document.getElementById('promo-modal');
+const closePromo = document.getElementById('close-promo');
+promoButton.addEventListener('click', () => {
+promoModal.classList.remove('hidden'); 
+setTimeout(() => {
+    promoModal.classList.add('active'); 
+}, 10); 
+});
+closePromo.addEventListener('click', () => {
+promoModal.classList.remove('active'); 
+setTimeout(() => {
+    promoModal.classList.add('hidden'); 
+}, 300);
+});
+promoModal.addEventListener('click', (e) => {
+if (e.target === promoModal) {
+    promoModal.classList.remove('active'); 
+    setTimeout(() => {
+        promoModal.classList.add('hidden');
+    }, 300); 
+}
+});
+
+function handleScroll() {
+    if (window.scrollY > lastScrollY) {
+        promoButton.classList.add('hidden');
+    } else {
+        promoButton.classList.remove('hidden');
+    }
+    lastScrollY = window.scrollY; 
+}
+window.addEventListener('scroll', handleScroll);
+    renderMenu(); //Creado por Danilo Herrera con amor para mi hermanita Daniela Herrera.
