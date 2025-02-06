@@ -2,68 +2,68 @@ const MENU_CATEGORIES = {
     "Tacos": [
         {
             id: 1,
-            nombre: "Tacos al Pastor",
-            descripcion: "Tacos estilo Mexicano de cerdo con piña.",
+            nombre: "pastor Tacos",
+            descripcion: "Mexican-style pork tacos with pineapple.",
             precio: 55,
             imagenes: ["../assets/pastor.webp"],
-            ingredientes: ["Tortilla de maíz", "Cerdo", "Piña", "Salsa verde y Salsa Roja"]
+            ingredientes: ["Corn tortilla", "Pork", "Pineapple", "Green sauce and Red sauce"]
         },{
             id: 10,
-            nombre: "Tacos de Alambre",
-            descripcion: "Tacos estilo Mexicano de res con queso mozarella.",
+            nombre: "Alambre Tacos",
+            descripcion: "Mexican-style beef tacos with mozzarella cheese.",
             precio: "55",
             imagenes: [
                 "../assets/Taquitos-de-alambre.webp",
                 "../assets/Alambres 2.webp"
             ],
-            ingredientes: ["Tortilla de maíz", "Res", "Queso Mozarella", "Salsa verde y Salsa Roja"]
+            ingredientes: ["Corn tortilla", "Beef", "Mozzarella cheese", "Green sauce and Red sauce"]
         },
         
         {
             id: 11,
-            nombre: "Tacos de Birria",
-            descripcion: "Dos tacos estilo Mexicano de res con queso mozarella y su exquisito caldo de birria.",
+            nombre: "Birria Tacos",
+            descripcion: "Two Mexican-style beef tacos with mozzarella cheese and their exquisite birria broth.",
             precio: "150",
             imagenes: ["../assets/Birria.webp"],
-            ingredientes: ["Tortilla de maíz", "Res", "Queso Mozarella", "Caldo de birria", "Salsa verde y Salsa Roja"]
+            ingredientes: ["Corn tortilla", "Beef", "Mozzarella cheese", "Birria broth", "Green sauce and Red sauce"]
         }
         
     ],
-    "Antojitos": [
+    "appetizers": [
         {
             id: 8,
             nombre: "Chilaquiles",
-            descripcion: "Exquisitos chilaquiles con tortilla de maiz tostada.",
-            precio: "150 a 180",
+            descripcion: "Exquisite chilaquiles with toasted corn tortilla.",
+            precio: "150 to 180",
             imagenes: ["../assets/chilaquiles.webp"],
-            ingredientes: ["Tortilla de maíz", "Carne: Pollo, Res, Cerdo o Mixto", "Salsa roja y verde", "Queso", "Crema", "Salsa de chilaquiles"]
+            ingredientes: ["Corn tortilla", "Meat: Chicken, Beef, Pork or Mixed", "Red and green sauce", "Cheese", "Cream", "Chilaquiles sauce"]
         },
         {
             id: 9,
             nombre: "Nachos",
-            descripcion: "Se te antojan?",
-            precio: "160 a 190",
+            descripcion: "Craving some?",
+            precio: "160 to 190",
             imagenes: [
                 "../assets/Nachos1.webp",
                 "../assets/Nachos2.webp"
             ],
-            ingredientes: ["Tortilla de Nacho", "Carne: Pollo, Res, Cerdo o Mixto", "Salsa roja y verde", "Queso amarillo", "salsa"]
+            ingredientes: ["Nacho tortilla", "Meat: Chicken, Beef, Pork or Mixed", "Red and green sauce", "Yellow cheese", "Sauce"]
         },
         {
             id: 15,
             nombre: "Burritos",
-            descripcion: "Burritos llenos de sabor 100% Mexicano ",
-            precio: "120 a 150",
+            descripcion: "Burritos full of 100% Mexican flavor.",
+            precio: "120 to 150",
             imagenes: ["../assets/Burritos.webp"],
-            ingredientes: ["Tortilla de harina", "Carne: pollo, Res, Cerdo o Mixto", "Frijoles molidos", "Queso Mozarella", "Lechuga"]
+            ingredientes: ["Flour tortilla", "Meat: Chicken, Beef, Pork or Mixed", "Mashed beans", "Mozzarella cheese", "Lettuce"]
         },
         {
             id: 16,
             nombre: "Quesadillas",
             descripcion: ".",
-            precio: "140 a 170",
+            precio: "140 to 170",
             imagenes: ["../assets/null.webp"],
-            ingredientes: ["Carne: pollo, res, cerdo o mixto","Tortilla de harina" , "Queso mozarella"]
+            ingredientes: ["Meat: Chicken, Beef, Pork or Mixed","Flour tortilla" , "Mozzarella cheese"]
         },
         {
             id: 17,
@@ -71,17 +71,17 @@ const MENU_CATEGORIES = {
             descripcion: ".",
             precio: "50",
             imagenes: ["../assets/null.webp"],
-            ingredientes: ["Carne: pollo, res, cerdo o mixto", "Tortilla tostada", "lechuga", "pico de gallo", "frijoles molidos"]
+            ingredientes: ["Meat: Chicken, Beef, Pork or Mixed", "Toasted tortilla", "Lettuce", "Pico de gallo", "Mashed beans"]
         },
     ],
-    "Sopas": [
+    "Soups": [
         {
             id: 14,
             nombre: "Maruloca",
-            descripcion: "Una combinación con un sabor de locura.",
+            descripcion: "A combination with a crazy flavor.",
             precio: "150",
             imagenes: ["../assets/Maruloca.webp"],
-            ingredientes: ["Maruchan", "Nachos", "Queso Amarillo", "mayonesa", "Takis"]
+            ingredientes: ["Maruchan", "Nachos", "Yellow cheese", "Mayonnaise", "Takis"]
         },
         {
             id: 18,
@@ -89,25 +89,25 @@ const MENU_CATEGORIES = {
             descripcion: ".",
             precio: "200",
             imagenes: ["../assets/null.webp"],
-            ingredientes: ["Carne de Res", "Queso mozarella", "Caldo de birria", "Ramen"]
+            ingredientes: ["Beef", "Mozzarella cheese", "Birria broth", "Ramen"]
         },
     ],
-    "Papas": [
+    "french fries": [
         {
             id: 12,
-            nombre: "Papas Locas",
-            descripcion: "Riquisimas papas fritas con MUCHO queso.",
+            nombre: "Crazy Fries",
+            descripcion: "Delicious French fries with LOTS of cheese.",
             precio: "180",
             imagenes: ["../assets/Papas-locas.webp"],
-            ingredientes: ["Papas", "Queso Chedar", "Bacon"]
+            ingredientes: ["Potatoes", "Cheddar cheese", "Bacon"]
         },
         {
             id: 13,
-            nombre: "Choripapas",
-            descripcion: "Riquisimas papas fritas con chorizo parrillero.",
+            nombre: "Chorizo Fries",
+            descripcion: "Delicious French fries with grilled chorizo.",
             precio: "150",
             imagenes: ["../assets/Choripapas.webp"],
-            ingredientes: ["Papas", "Chorizo parrillero", "salsa", "mayonesa"]
+            ingredientes: ["Potatoes", "Grilled chorizo", "Sauce", "Mayonnaise"]
         }
     ]
 };
@@ -303,9 +303,9 @@ window.addEventListener('scroll', updateScrollButton);
 const brandingSquare = document.createElement('div');
 brandingSquare.className = 'branding-square bg-gradient-to-r from-white to-gray-200 text-gray-800 text-center rounded-lg shadow-md p-2 mt-4';
 brandingSquare.innerHTML = `
-     <a href="https://wa.me/50587248446" target="_blank" class="block w-full h-full no-underline">
-        <p class="text-base font-bold">Creado por <strong>XinoCore</strong></p>
-        <p class="text-xs">presiona para contactar</p>
+    <a href="https://wa.me/50587248446" target="_blank" class="block w-full h-full no-underline">
+        <p class="text-base font-bold">Created by <strong>XinoCore</strong></p>
+        <p class="text-xs">click to contact</p>
     </a>
 `;
 menuGrid.appendChild(brandingSquare);
