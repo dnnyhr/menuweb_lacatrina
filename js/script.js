@@ -303,7 +303,7 @@ window.addEventListener('scroll', updateScrollButton);
 const brandingSquare = document.createElement('div');
 brandingSquare.className = 'branding-square bg-gradient-to-r from-white to-gray-200 text-gray-800 text-center rounded-lg shadow-md p-2 mt-4';
 brandingSquare.innerHTML = `
-     <a href="https://wa.me/50587248446" target="_blank" class="block w-full h-full no-underline">
+     <a href="https://xinocore.com" target="_blank" class="block w-full h-full no-underline">
         <p class="text-base font-bold">Creado por <strong>XinoCore</strong></p>
         <p class="text-xs">presiona para contactar</p>
     </a>

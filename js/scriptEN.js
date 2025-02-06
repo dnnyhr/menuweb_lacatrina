@@ -2,7 +2,7 @@ const MENU_CATEGORIES = {
     "Tacos": [
         {
             id: 1,
-            nombre: "pastor Tacos",
+            nombre: "Pastor Tacos",
             descripcion: "Mexican-style pork tacos with pineapple.",
             precio: 55,
             imagenes: ["../assets/pastor.webp"],
@@ -29,7 +29,7 @@ const MENU_CATEGORIES = {
         }
         
     ],
-    "appetizers": [
+    "Appetizers": [
         {
             id: 8,
             nombre: "Chilaquiles",
@@ -92,10 +92,10 @@ const MENU_CATEGORIES = {
             ingredientes: ["Beef", "Mozzarella cheese", "Birria broth", "Ramen"]
         },
     ],
-    "french fries": [
+    "French fries": [
         {
             id: 12,
-            nombre: "Crazy Fries",
+            nombre: "Papas locas",
             descripcion: "Delicious French fries with LOTS of cheese.",
             precio: "180",
             imagenes: ["../assets/Papas-locas.webp"],
@@ -103,7 +103,7 @@ const MENU_CATEGORIES = {
         },
         {
             id: 13,
-            nombre: "Chorizo Fries",
+            nombre: "Choripapas",
             descripcion: "Delicious French fries with grilled chorizo.",
             precio: "150",
             imagenes: ["../assets/Choripapas.webp"],
@@ -235,7 +235,7 @@ const MENU_CATEGORIES = {
                     <p class="text-sm text-gray-600 mb-3">${plato.descripcion}</p>
                     <button data-id="${plato.id}" 
                             class="details-btn w-full bg-gradient-to-r from-pink-500 to-orange-500 text-white py-2 px-4 rounded-lg hover:opacity-90 transition-opacity duration-300 shadow-md">
-                        Ver más detalles
+                        Show more details
                     </button>
                 `;
                 card.addEventListener('click', (event) => {
@@ -303,7 +303,7 @@ window.addEventListener('scroll', updateScrollButton);
 const brandingSquare = document.createElement('div');
 brandingSquare.className = 'branding-square bg-gradient-to-r from-white to-gray-200 text-gray-800 text-center rounded-lg shadow-md p-2 mt-4';
 brandingSquare.innerHTML = `
-    <a href="https://wa.me/50587248446" target="_blank" class="block w-full h-full no-underline">
+    <a href="https://xinocore.com" target="_blank" class="block w-full h-full no-underline">
         <p class="text-base font-bold">Created by <strong>XinoCore</strong></p>
         <p class="text-xs">click to contact</p>
     </a>
@@ -368,7 +368,7 @@ menuGrid.appendChild(brandingSquare);
                         <h2 class="text-lg font-bold">${plato.nombre}</h2>
                         <p class="text-sm text-gray-600">${plato.descripcion}</p>
                         <button data-id="${plato.id}" class="details-btn mt-3 bg-gradient-to-r from-pink-500 to-orange-500 text-white py-2 px-4 rounded-lg w-full">
-                            Ver más detalles
+                            Show more details
                         </button>
                     `;
                     card.addEventListener('click', () => openDrawer(plato));
