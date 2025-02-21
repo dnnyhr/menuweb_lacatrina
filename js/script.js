@@ -1,4 +1,5 @@
 // Agregar esta función al inicio de tu script.js
+// Agregar esta función al inicio de tu script.js
 function trackDishView(plato) {
     const language = window.location.pathname.includes('/ES/') ? 'ES' : 
                     window.location.pathname.includes('/EN/') ? 'EN' : 'Unknown';
@@ -20,8 +21,8 @@ function trackDishView(plato) {
         category: category
     };
     
-    // Enviar los datos al worker
-    fetch('https://xinocore.com/api/track-dish', {
+    // Enviar los datos al worker (usando el subdominio correcto)
+    fetch('https://lacatrina.xinocore.com/api/track-dish', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
