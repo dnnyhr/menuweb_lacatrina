@@ -181,8 +181,6 @@ const MENU_CATEGORIES = {
         handleGalleryNavigation(plato.imagenes);
         overlay.style.display = 'flex';
         scrollButton.classList.add('hidden');
-        fetch(`https://catrina.entitydh.workers.dev?plato=${encodeURIComponent(plato.nombre)}`)
-        .catch(error => console.error("Error registrando visita:", error));
 }
 
     
