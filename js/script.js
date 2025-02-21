@@ -1,3 +1,35 @@
+// Agregar esta función al inicio de tu script.js
+function trackDishView(plato) {
+    const language = window.location.pathname.includes('/ES/') ? 'ES' : 
+                    window.location.pathname.includes('/EN/') ? 'EN' : 'Unknown';
+    
+    // Determinar la categoría del platillo
+    let category = 'Desconocido';
+    for (const [cat, items] of Object.entries(MENU_CATEGORIES)) {
+        if (items.some(item => item.id === plato.id)) {
+            category = cat;
+            break;
+        }
+    }
+    
+    // Datos a enviar
+    const trackData = {
+        dishId: plato.id,
+        dishName: plato.nombre,
+        language: language,
+        category: category
+    };
+    
+    // Enviar los datos al worker
+    fetch('https://xinocore.com/api/track-dish', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(trackData)
+    })
+    .catch(error => console.error('Error al registrar vista:', error));
+}
 const MENU_CATEGORIES = {
     "Tacos": [
         {
@@ -173,6 +205,8 @@ const MENU_CATEGORIES = {
         handleGalleryNavigation(plato.imagenes);
         overlay.style.display = 'flex';
         scrollButton.classList.add('hidden');
+
+        trackDishView(plato);
     }
     
     function closeDrawer() {
