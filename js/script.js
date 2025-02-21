@@ -150,8 +150,15 @@ const MENU_CATEGORIES = {
             updateGallery(images);
         }, 3000); // tiempo de las imagenes
     }
+    function registerView(platoId) {
+        fetch(`https://polished-sun-87af.entitydh.workers.dev/view?id=${platoId}`, { method: "GET" })
+            .then(response => response.json())
+            .then(data => console.log(`Platillo ${platoId} vistas:`, data.views))
+            .catch(error => console.error("Error registrando vista:", error));
+    }
 
     function openDrawer(plato) {
+        registerView(plato.id); // Llamar al Worker cuando un platillo se visualice
         const overlay = document.getElementById('drawer-overlay');
         const title = document.getElementById('drawer-title');
         const description = document.getElementById('drawer-description');
@@ -174,9 +181,7 @@ const MENU_CATEGORIES = {
         handleGalleryNavigation(plato.imagenes);
         overlay.style.display = 'flex';
         scrollButton.classList.add('hidden');
-        fetch(`https://catrina.entitydh.workers.dev?plato=${encodeURIComponent(plato.nombre)}`)
-        .catch(error => console.error("Error registrando visita:", error));
-}
+    }
     
     
     function closeDrawer() {
